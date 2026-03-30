@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Tema1 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Tema1 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
