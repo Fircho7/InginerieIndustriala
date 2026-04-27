@@ -19,7 +19,7 @@ namespace FilmWebService
     public class FilmService : WebService
     {
         private string connectionString =
-            @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=FilmeDB;Integrated Security=True";
+            @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\FilmeDB.mdf;Integrated Security=True";
 
         [WebMethod]
         public string AdaugaFilm(string titlu, string gen, int an, double rating)
@@ -177,6 +177,30 @@ namespace FilmWebService
             }
 
             return lista.ToArray();
+        }
+
+        [WebMethod]
+        public string PopuleazaBaza()
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                string query = @"
+                INSERT INTO Filme (Titlu, Gen, An, Rating) VALUES
+                ('Inception', 'Sci-Fi', 2010, 8.8),
+                ('Matrix', 'Sci-Fi', 1999, 8.7),
+                ('Forrest Gump', 'Drama', 1994, 8.8),
+                ('Titanic', 'Romance', 1997, 7.8),
+                ('Avatar', 'Sci-Fi', 2009, 7.9),
+                ('Joker', 'Drama', 2019, 8.4),
+                ('Lion King', 'Animation', 1994, 8.5),
+                ('Harry Potter', 'Fantasy', 2001, 7.6)";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+
+            return "Baza populata cu succes";
         }
     }
 }
