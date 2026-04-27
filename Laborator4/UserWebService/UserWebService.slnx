@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="UserClientWPF/UserClientWPF.csproj" />
+  <Project Path="UserWebService/UserWebService.csproj" />
+</Solution>

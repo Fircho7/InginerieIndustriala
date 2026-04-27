@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AdaugaFilm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="titlu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gen" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="an" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rating" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdaugaFilmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AdaugaFilmResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificaFilm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="titlu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gen" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="an" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rating" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificaFilmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ModificaFilmResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StergeFilm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StergeFilmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StergeFilmResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AfiseazaFilme">
+        <s:complexType />
+      </s:element>
+      <s:element name="AfiseazaFilmeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AfiseazaFilmeResult" type="tns:ArrayOfFilm" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFilm">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Film" nillable="true" type="tns:Film" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Film">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Titlu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gen" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="An" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Rating" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FiltreazaDupaGen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gen" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FiltreazaDupaGenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FiltreazaDupaGenResult" type="tns:ArrayOfFilm" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CautaDupaTitlu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="titlu" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CautaDupaTitluResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CautaDupaTitluResult" type="tns:ArrayOfFilm" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AdaugaFilmSoapIn">
+    <wsdl:part name="parameters" element="tns:AdaugaFilm" />
+  </wsdl:message>
+  <wsdl:message name="AdaugaFilmSoapOut">
+    <wsdl:part name="parameters" element="tns:AdaugaFilmResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModificaFilmSoapIn">
+    <wsdl:part name="parameters" element="tns:ModificaFilm" />
+  </wsdl:message>
+  <wsdl:message name="ModificaFilmSoapOut">
+    <wsdl:part name="parameters" element="tns:ModificaFilmResponse" />
+  </wsdl:message>
+  <wsdl:message name="StergeFilmSoapIn">
+    <wsdl:part name="parameters" element="tns:StergeFilm" />
+  </wsdl:message>
+  <wsdl:message name="StergeFilmSoapOut">
+    <wsdl:part name="parameters" element="tns:StergeFilmResponse" />
+  </wsdl:message>
+  <wsdl:message name="AfiseazaFilmeSoapIn">
+    <wsdl:part name="parameters" element="tns:AfiseazaFilme" />
+  </wsdl:message>
+  <wsdl:message name="AfiseazaFilmeSoapOut">
+    <wsdl:part name="parameters" element="tns:AfiseazaFilmeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FiltreazaDupaGenSoapIn">
+    <wsdl:part name="parameters" element="tns:FiltreazaDupaGen" />
+  </wsdl:message>
+  <wsdl:message name="FiltreazaDupaGenSoapOut">
+    <wsdl:part name="parameters" element="tns:FiltreazaDupaGenResponse" />
+  </wsdl:message>
+  <wsdl:message name="CautaDupaTitluSoapIn">
+    <wsdl:part name="parameters" element="tns:CautaDupaTitlu" />
+  </wsdl:message>
+  <wsdl:message name="CautaDupaTitluSoapOut">
+    <wsdl:part name="parameters" element="tns:CautaDupaTitluResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FilmServiceSoap">
+    <wsdl:operation name="AdaugaFilm">
+      <wsdl:input message="tns:AdaugaFilmSoapIn" />
+      <wsdl:output message="tns:AdaugaFilmSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificaFilm">
+      <wsdl:input message="tns:ModificaFilmSoapIn" />
+      <wsdl:output message="tns:ModificaFilmSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StergeFilm">
+      <wsdl:input message="tns:StergeFilmSoapIn" />
+      <wsdl:output message="tns:StergeFilmSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AfiseazaFilme">
+      <wsdl:input message="tns:AfiseazaFilmeSoapIn" />
+      <wsdl:output message="tns:AfiseazaFilmeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FiltreazaDupaGen">
+      <wsdl:input message="tns:FiltreazaDupaGenSoapIn" />
+      <wsdl:output message="tns:FiltreazaDupaGenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CautaDupaTitlu">
+      <wsdl:input message="tns:CautaDupaTitluSoapIn" />
+      <wsdl:output message="tns:CautaDupaTitluSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FilmServiceSoap" type="tns:FilmServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AdaugaFilm">
+      <soap:operation soapAction="http://tempuri.org/AdaugaFilm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaFilm">
+      <soap:operation soapAction="http://tempuri.org/ModificaFilm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StergeFilm">
+      <soap:operation soapAction="http://tempuri.org/StergeFilm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AfiseazaFilme">
+      <soap:operation soapAction="http://tempuri.org/AfiseazaFilme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FiltreazaDupaGen">
+      <soap:operation soapAction="http://tempuri.org/FiltreazaDupaGen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CautaDupaTitlu">
+      <soap:operation soapAction="http://tempuri.org/CautaDupaTitlu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FilmServiceSoap12" type="tns:FilmServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AdaugaFilm">
+      <soap12:operation soapAction="http://tempuri.org/AdaugaFilm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaFilm">
+      <soap12:operation soapAction="http://tempuri.org/ModificaFilm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StergeFilm">
+      <soap12:operation soapAction="http://tempuri.org/StergeFilm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AfiseazaFilme">
+      <soap12:operation soapAction="http://tempuri.org/AfiseazaFilme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FiltreazaDupaGen">
+      <soap12:operation soapAction="http://tempuri.org/FiltreazaDupaGen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CautaDupaTitlu">
+      <soap12:operation soapAction="http://tempuri.org/CautaDupaTitlu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FilmService">
+    <wsdl:port name="FilmServiceSoap" binding="tns:FilmServiceSoap">
+      <soap:address location="https://localhost:44393/FilmService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FilmServiceSoap12" binding="tns:FilmServiceSoap12">
+      <soap12:address location="https://localhost:44393/FilmService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

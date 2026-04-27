@@ -1,0 +1,9 @@
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\StudentWebService\StudentClientWinForms\bin\Debug\StudentClientWinForms.exe.config
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\StudentWebService\StudentClientWinForms\bin\Debug\StudentClientWinForms.exe
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\StudentWebService\StudentClientWinForms\bin\Debug\StudentClientWinForms.pdb
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\StudentWebService\StudentClientWinForms\obj\Debug\StudentClientWinForms.csproj.AssemblyReference.cache
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\StudentWebService\StudentClientWinForms\obj\Debug\StudentClientWinForms.Properties.Resources.resources
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\StudentWebService\StudentClientWinForms\obj\Debug\StudentClientWinForms.csproj.GenerateResource.cache
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\StudentWebService\StudentClientWinForms\obj\Debug\StudentClientWinForms.csproj.CoreCompileInputs.cache
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\StudentWebService\StudentClientWinForms\obj\Debug\StudentClientWinForms.exe
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\StudentWebService\StudentClientWinForms\obj\Debug\StudentClientWinForms.pdb

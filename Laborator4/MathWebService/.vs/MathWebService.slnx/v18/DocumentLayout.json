@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\MathWebService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADCE853D-A253-41FF-A5AE-C7CDBA6BB3E8}|MathWebService\\MathWebService.csproj|c:\\users\\firso\\onedrive\\desktop\\ii\\ii-\\laborator4\\mathwebservice\\mathwebservice\\mathservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADCE853D-A253-41FF-A5AE-C7CDBA6BB3E8}|MathWebService\\MathWebService.csproj|solutionrelative:mathwebservice\\mathservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA8AA61-A0D6-43D7-AD07-7CA366BB76AC}|MathClient\\MathClient.csproj|c:\\users\\firso\\onedrive\\desktop\\ii\\ii-\\laborator4\\mathwebservice\\mathclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFA8AA61-A0D6-43D7-AD07-7CA366BB76AC}|MathClient\\MathClient.csproj|solutionrelative:mathclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\MathWebService\\MathClient\\Program.cs",
+              "RelativeDocumentMoniker": "MathClient\\Program.cs",
+              "ToolTip": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\MathWebService\\MathClient\\Program.cs",
+              "RelativeToolTip": "MathClient\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T07:42:37.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MathService.asmx.cs",
+              "DocumentMoniker": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\MathWebService\\MathWebService\\MathService.asmx.cs",
+              "RelativeDocumentMoniker": "MathWebService\\MathService.asmx.cs",
+              "ToolTip": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\MathWebService\\MathWebService\\MathService.asmx.cs",
+              "RelativeToolTip": "MathWebService\\MathService.asmx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T07:41:33.071Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

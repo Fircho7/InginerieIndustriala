@@ -1,0 +1,7 @@
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\MathWebService\MathClient\bin\Debug\MathClient.exe.config
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\MathWebService\MathClient\bin\Debug\MathClient.exe
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\MathWebService\MathClient\bin\Debug\MathClient.pdb
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\MathWebService\MathClient\obj\Debug\MathClient.csproj.AssemblyReference.cache
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\MathWebService\MathClient\obj\Debug\MathClient.csproj.CoreCompileInputs.cache
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\MathWebService\MathClient\obj\Debug\MathClient.exe
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\MathWebService\MathClient\obj\Debug\MathClient.pdb

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MathClient/MathClient.csproj">
+    <BuildDependency Project="MathWebService/MathWebService.csproj" />
+  </Project>
+  <Project Path="MathWebService/MathWebService.csproj" />
+</Solution>

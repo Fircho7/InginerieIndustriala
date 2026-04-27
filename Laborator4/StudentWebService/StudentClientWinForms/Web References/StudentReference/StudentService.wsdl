@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AdaugaStudent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nume" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prenume" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="specializare" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdaugaStudentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AdaugaStudentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AfisareStudenti">
+        <s:complexType />
+      </s:element>
+      <s:element name="AfisareStudentiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AfisareStudentiResult" type="tns:ArrayOfStudent" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStudent">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Student" nillable="true" type="tns:Student" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Student">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nume" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Prenume" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Specializare" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CautaStudentDupaID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CautaStudentDupaIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CautaStudentDupaIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AdaugaStudentSoapIn">
+    <wsdl:part name="parameters" element="tns:AdaugaStudent" />
+  </wsdl:message>
+  <wsdl:message name="AdaugaStudentSoapOut">
+    <wsdl:part name="parameters" element="tns:AdaugaStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="AfisareStudentiSoapIn">
+    <wsdl:part name="parameters" element="tns:AfisareStudenti" />
+  </wsdl:message>
+  <wsdl:message name="AfisareStudentiSoapOut">
+    <wsdl:part name="parameters" element="tns:AfisareStudentiResponse" />
+  </wsdl:message>
+  <wsdl:message name="CautaStudentDupaIDSoapIn">
+    <wsdl:part name="parameters" element="tns:CautaStudentDupaID" />
+  </wsdl:message>
+  <wsdl:message name="CautaStudentDupaIDSoapOut">
+    <wsdl:part name="parameters" element="tns:CautaStudentDupaIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="StudentServiceSoap">
+    <wsdl:operation name="AdaugaStudent">
+      <wsdl:input message="tns:AdaugaStudentSoapIn" />
+      <wsdl:output message="tns:AdaugaStudentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AfisareStudenti">
+      <wsdl:input message="tns:AfisareStudentiSoapIn" />
+      <wsdl:output message="tns:AfisareStudentiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CautaStudentDupaID">
+      <wsdl:input message="tns:CautaStudentDupaIDSoapIn" />
+      <wsdl:output message="tns:CautaStudentDupaIDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StudentServiceSoap" type="tns:StudentServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AdaugaStudent">
+      <soap:operation soapAction="http://tempuri.org/AdaugaStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AfisareStudenti">
+      <soap:operation soapAction="http://tempuri.org/AfisareStudenti" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CautaStudentDupaID">
+      <soap:operation soapAction="http://tempuri.org/CautaStudentDupaID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StudentServiceSoap12" type="tns:StudentServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AdaugaStudent">
+      <soap12:operation soapAction="http://tempuri.org/AdaugaStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AfisareStudenti">
+      <soap12:operation soapAction="http://tempuri.org/AfisareStudenti" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CautaStudentDupaID">
+      <soap12:operation soapAction="http://tempuri.org/CautaStudentDupaID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StudentService">
+    <wsdl:port name="StudentServiceSoap" binding="tns:StudentServiceSoap">
+      <soap:address location="https://localhost:44300/StudentService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="StudentServiceSoap12" binding="tns:StudentServiceSoap12">
+      <soap12:address location="https://localhost:44300/StudentService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Adunare">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdunareResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AdunareResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Scadere">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ScadereResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ScadereResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Inmultire">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InmultireResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InmultireResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Impartire">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImpartireResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImpartireResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AdunareSoapIn">
+    <wsdl:part name="parameters" element="tns:Adunare" />
+  </wsdl:message>
+  <wsdl:message name="AdunareSoapOut">
+    <wsdl:part name="parameters" element="tns:AdunareResponse" />
+  </wsdl:message>
+  <wsdl:message name="ScadereSoapIn">
+    <wsdl:part name="parameters" element="tns:Scadere" />
+  </wsdl:message>
+  <wsdl:message name="ScadereSoapOut">
+    <wsdl:part name="parameters" element="tns:ScadereResponse" />
+  </wsdl:message>
+  <wsdl:message name="InmultireSoapIn">
+    <wsdl:part name="parameters" element="tns:Inmultire" />
+  </wsdl:message>
+  <wsdl:message name="InmultireSoapOut">
+    <wsdl:part name="parameters" element="tns:InmultireResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImpartireSoapIn">
+    <wsdl:part name="parameters" element="tns:Impartire" />
+  </wsdl:message>
+  <wsdl:message name="ImpartireSoapOut">
+    <wsdl:part name="parameters" element="tns:ImpartireResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MathServiceSoap">
+    <wsdl:operation name="Adunare">
+      <wsdl:input message="tns:AdunareSoapIn" />
+      <wsdl:output message="tns:AdunareSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Scadere">
+      <wsdl:input message="tns:ScadereSoapIn" />
+      <wsdl:output message="tns:ScadereSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Inmultire">
+      <wsdl:input message="tns:InmultireSoapIn" />
+      <wsdl:output message="tns:InmultireSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Impartire">
+      <wsdl:input message="tns:ImpartireSoapIn" />
+      <wsdl:output message="tns:ImpartireSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MathServiceSoap" type="tns:MathServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Adunare">
+      <soap:operation soapAction="http://tempuri.org/Adunare" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Scadere">
+      <soap:operation soapAction="http://tempuri.org/Scadere" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Inmultire">
+      <soap:operation soapAction="http://tempuri.org/Inmultire" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Impartire">
+      <soap:operation soapAction="http://tempuri.org/Impartire" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MathServiceSoap12" type="tns:MathServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Adunare">
+      <soap12:operation soapAction="http://tempuri.org/Adunare" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Scadere">
+      <soap12:operation soapAction="http://tempuri.org/Scadere" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Inmultire">
+      <soap12:operation soapAction="http://tempuri.org/Inmultire" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Impartire">
+      <soap12:operation soapAction="http://tempuri.org/Impartire" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MathService">
+    <wsdl:port name="MathServiceSoap" binding="tns:MathServiceSoap">
+      <soap:address location="https://localhost:44346/MathService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MathServiceSoap12" binding="tns:MathServiceSoap12">
+      <soap12:address location="https://localhost:44346/MathService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

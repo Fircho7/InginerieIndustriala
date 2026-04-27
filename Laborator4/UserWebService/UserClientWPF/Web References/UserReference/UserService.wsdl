@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ValidareEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidareEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidareEmailResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidareParola">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parola" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidareParolaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidareParolaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InregistrareUtilizator">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parola" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InregistrareUtilizatorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InregistrareUtilizatorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AutentificareUtilizator">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parola" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AutentificareUtilizatorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AutentificareUtilizatorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidareEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidareEmail" />
+  </wsdl:message>
+  <wsdl:message name="ValidareEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidareEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidareParolaSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidareParola" />
+  </wsdl:message>
+  <wsdl:message name="ValidareParolaSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidareParolaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InregistrareUtilizatorSoapIn">
+    <wsdl:part name="parameters" element="tns:InregistrareUtilizator" />
+  </wsdl:message>
+  <wsdl:message name="InregistrareUtilizatorSoapOut">
+    <wsdl:part name="parameters" element="tns:InregistrareUtilizatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="AutentificareUtilizatorSoapIn">
+    <wsdl:part name="parameters" element="tns:AutentificareUtilizator" />
+  </wsdl:message>
+  <wsdl:message name="AutentificareUtilizatorSoapOut">
+    <wsdl:part name="parameters" element="tns:AutentificareUtilizatorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UserServiceSoap">
+    <wsdl:operation name="ValidareEmail">
+      <wsdl:input message="tns:ValidareEmailSoapIn" />
+      <wsdl:output message="tns:ValidareEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidareParola">
+      <wsdl:input message="tns:ValidareParolaSoapIn" />
+      <wsdl:output message="tns:ValidareParolaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InregistrareUtilizator">
+      <wsdl:input message="tns:InregistrareUtilizatorSoapIn" />
+      <wsdl:output message="tns:InregistrareUtilizatorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AutentificareUtilizator">
+      <wsdl:input message="tns:AutentificareUtilizatorSoapIn" />
+      <wsdl:output message="tns:AutentificareUtilizatorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserServiceSoap" type="tns:UserServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidareEmail">
+      <soap:operation soapAction="http://tempuri.org/ValidareEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidareParola">
+      <soap:operation soapAction="http://tempuri.org/ValidareParola" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InregistrareUtilizator">
+      <soap:operation soapAction="http://tempuri.org/InregistrareUtilizator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutentificareUtilizator">
+      <soap:operation soapAction="http://tempuri.org/AutentificareUtilizator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UserServiceSoap12" type="tns:UserServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidareEmail">
+      <soap12:operation soapAction="http://tempuri.org/ValidareEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidareParola">
+      <soap12:operation soapAction="http://tempuri.org/ValidareParola" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InregistrareUtilizator">
+      <soap12:operation soapAction="http://tempuri.org/InregistrareUtilizator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutentificareUtilizator">
+      <soap12:operation soapAction="http://tempuri.org/AutentificareUtilizator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserService">
+    <wsdl:port name="UserServiceSoap" binding="tns:UserServiceSoap">
+      <soap:address location="https://localhost:44375/UserService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UserServiceSoap12" binding="tns:UserServiceSoap12">
+      <soap12:address location="https://localhost:44375/UserService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

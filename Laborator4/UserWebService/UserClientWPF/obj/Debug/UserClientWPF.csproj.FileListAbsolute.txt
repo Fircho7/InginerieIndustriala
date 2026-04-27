@@ -1,0 +1,14 @@
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\bin\Debug\UserClientWPF.exe.config
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\bin\Debug\UserClientWPF.exe
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\bin\Debug\UserClientWPF.pdb
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\UserClientWPF.csproj.AssemblyReference.cache
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\MainWindow.baml
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\MainWindow.g.cs
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\App.g.cs
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\UserClientWPF_MarkupCompile.cache
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\UserClientWPF.g.resources
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\UserClientWPF.Properties.Resources.resources
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\UserClientWPF.csproj.GenerateResource.cache
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\UserClientWPF.csproj.CoreCompileInputs.cache
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\UserClientWPF.exe
+C:\Users\firso\OneDrive\Desktop\II\II-\Laborator4\UserWebService\UserClientWPF\obj\Debug\UserClientWPF.pdb

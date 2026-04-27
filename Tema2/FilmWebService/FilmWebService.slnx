@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FilmClientWinForms/FilmClientWinForms.csproj" Id="ce90ea81-a86c-4c4f-8ec0-9796e6c6c363" />
+  <Project Path="FilmWebService/FilmWebService.csproj" Id="5fad850d-3f93-4b4f-9068-8c43a5bb910b" />
+</Solution>

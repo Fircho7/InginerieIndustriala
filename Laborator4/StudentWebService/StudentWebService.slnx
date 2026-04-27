@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="StudentClientWinForms/StudentClientWinForms.csproj" />
+  <Project Path="StudentWebService/StudentWebService.csproj" />
+</Solution>

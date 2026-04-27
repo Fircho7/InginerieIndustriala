@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\StudentWebService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D83B5F4A-A83E-48EC-928E-57950C66DE43}|StudentClientWinForms\\StudentClientWinForms.csproj|c:\\users\\firso\\onedrive\\desktop\\ii\\ii-\\laborator4\\studentwebservice\\studentclientwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D83B5F4A-A83E-48EC-928E-57950C66DE43}|StudentClientWinForms\\StudentClientWinForms.csproj|solutionrelative:studentclientwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D83B5F4A-A83E-48EC-928E-57950C66DE43}|StudentClientWinForms\\StudentClientWinForms.csproj|c:\\users\\firso\\onedrive\\desktop\\ii\\ii-\\laborator4\\studentwebservice\\studentclientwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D83B5F4A-A83E-48EC-928E-57950C66DE43}|StudentClientWinForms\\StudentClientWinForms.csproj|solutionrelative:studentclientwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D83B5F4A-A83E-48EC-928E-57950C66DE43}|StudentClientWinForms\\StudentClientWinForms.csproj|c:\\users\\firso\\onedrive\\desktop\\ii\\ii-\\laborator4\\studentwebservice\\studentclientwinforms\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D83B5F4A-A83E-48EC-928E-57950C66DE43}|StudentClientWinForms\\StudentClientWinForms.csproj|solutionrelative:studentclientwinforms\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC8F464-BFF9-44EA-9686-B2C6E78158E7}|StudentWebService\\StudentWebService.csproj|c:\\users\\firso\\onedrive\\desktop\\ii\\ii-\\laborator4\\studentwebservice\\studentwebservice\\studentservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC8F464-BFF9-44EA-9686-B2C6E78158E7}|StudentWebService\\StudentWebService.csproj|solutionrelative:studentwebservice\\studentservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\StudentWebService\\StudentClientWinForms\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "StudentClientWinForms\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\StudentWebService\\StudentClientWinForms\\Form1.Designer.cs",
+              "RelativeToolTip": "StudentClientWinForms\\Form1.Designer.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowJgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T08:21:12.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\StudentWebService\\StudentClientWinForms\\Form1.cs",
+              "RelativeDocumentMoniker": "StudentClientWinForms\\Form1.cs",
+              "ToolTip": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\StudentWebService\\StudentClientWinForms\\Form1.cs",
+              "RelativeToolTip": "StudentClientWinForms\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T08:20:10.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\StudentWebService\\StudentClientWinForms\\Form1.cs",
+              "RelativeDocumentMoniker": "StudentClientWinForms\\Form1.cs",
+              "ToolTip": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\StudentWebService\\StudentClientWinForms\\Form1.cs [Design]",
+              "RelativeToolTip": "StudentClientWinForms\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T08:19:01.717Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentService.asmx.cs",
+              "DocumentMoniker": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\StudentWebService\\StudentWebService\\StudentService.asmx.cs",
+              "RelativeDocumentMoniker": "StudentWebService\\StudentService.asmx.cs",
+              "ToolTip": "C:\\Users\\firso\\OneDrive\\Desktop\\II\\II-\\Laborator4\\StudentWebService\\StudentWebService\\StudentService.asmx.cs",
+              "RelativeToolTip": "StudentWebService\\StudentService.asmx.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T08:18:18.66Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FilmClientWinForms.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FilmClientWinForms_FilmReference_FilmService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://localhost:44393/FilmService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
